@@ -3,67 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="task12.css" />
+    <title>CSS-7</title>
+    <style>
+        .b{
+            background-color: #A22B55;
+            padding: 20px 20%;
+        }
+      form {
+        margin: 0 auto;
+        display: inline-block;
+      }
+      #r{
+        float: right;
+      }
+      label,input,select,textarea{
+        float: left;
+      }
+      .c,table{
+        background-color: #75213F;
+        margin:0 auto;
+        text-align:center;
+      }
+      table,tr,td{
+        padding: 5px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .a{
+        width: 100%;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <div class="registration-form">
-        <form>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required placeholder="your name" />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="your email"/>
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" required />
-          </div>
-
-          <div class="form-group">
-            <label>Gender</label>
-            <div class="gender-options">
-              <div class="radio-group">
-                <input type="radio" id="male" name="gender" value="male" />
-                <label for="male">Male</label>
-              </div>
-              <div class="radio-group">
-                <input type="radio" id="female" name="gender" value="female" />
-                <label for="female">Female</label>
-              </div>
-              <div class="radio-group">
-                <input type="radio" id="other" name="gender" value="other" />
-                <label for="other">Other</label>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="language">Language</label>
-            <select id="language" name="language">
-              <option value="english">English</option>
-              <option value="hindi">Hindi</option>
-              <option value="telugu">Telugu</option>
-              <option value="marathi">Tamil</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="zipcode">Zip Code</label>
-            <input type="text" id="zipcode" name="zipcode" required />
-          </div>
-          <div class="form-group">
-            <label for="about">About</label>
-            <textarea id="about" name="about" rows="4" placeholder="write about yourself...."></textarea>
-          </div>
-          <button type="submit" class="register-button">Register</button>
-        </form>
+    <div>
+      <div class="b">
+        <div class="c">
+          <table>
+            <form>
+              <tr>
+                <td>
+                  <label for="name">Name:</label>
+                </td><td>
+                  <input type="text" id="name" placeholder="your name"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="email">Email:</label>
+                </td><td>
+                  <input type="text" id="email" placeholder="your email"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="password">Password:</label>
+                </td><td>
+                  <input type="password" id="password" name="password" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="ph">Phone Number:</label>
+                </td><td>
+                  <input type="password" id="re-password" name="re-password" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="gender">Gender:</label>
+                </td><td>
+                    <span>
+                      <label for="m">Male:</label><input type="radio" id="m" />
+                    </span>
+                    <span>
+                      <label for="f">Female:</label
+                      ><input type="radio" id="f" />
+                    </span>
+                    <span>
+                      <label for="ot">Other:</label
+                      ><input type="radio" id="ot" />
+                    </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="lang">Language:</label>
+                </td><td>
+                  <select>
+                    <option disabled selected>Select a language:</option>
+                    <option>Telugu</option>
+                    <option>Hindi</option>
+                    <option>English</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="zip">Zipcode:</label>
+                </td><td>
+                  <input type="text" id="zip" name="zip" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="abt">About:</label>
+                </td><td>
+                  <textarea id="abt" placeholder="Write about yourself..."></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input type="submit" value="Register" class="a" />
+                </td>
+              </tr>
+            </form>
+          </table>
+        </div>
       </div>
     </div>
   </body>

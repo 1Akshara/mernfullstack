@@ -1,126 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS-7</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS task-7</title>
     <style>
-        .b{
-            background-color: #A22B55;
-            padding: 20px 20%;
+        .out{
+            
+            background-color: brown;
+            margin: 80px 80px 80px 80px;
+            padding: 10px 90px 10px 90px;
         }
-      form {
-        margin: 0 auto;
-        display: inline-block;
-      }
-      #r{
-        float: right;
-      }
-      label,input,select,textarea{
-        float: left;
-      }
-      .c,table{
-        background-color: #75213F;
-        margin:0 auto;
-        text-align:center;
-      }
-      table,tr,td{
-        padding: 5px;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .a{
-        width: 100%;
-        font-weight: bold;
-      }
+        form{
+            margin: 10px 80px 10px 80px;
+            background-color: rgb(100, 25, 25);
+            padding:  20px 90px 20px 90px;
+          
+        }
+        input[type=submit]{
+                margin-left:240px ;
+                border-radius: 10px;
+                padding: 10px;
+                font-weight: bolder;
+                width: 45%;
+        }
+        input[type=text],input[type=password],input[type=tel],input[type=email],input[type=number]{
+            width: 300px;
+            padding: 5px;
+        }
+        label{
+            margin-left: 200px;
+            color: white;
+            display: inline-block;
+            width: 150px;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        select{
+            background-color: rgba(255, 255, 255, 0.89);
+            height: 30px;
+            padding: 3px;
+            width: 170px;
+        }
     </style>
-  </head>
-  <body>
-    <div>
-      <div class="b">
-        <div class="c">
-          <table>
-            <form>
-              <tr>
-                <td>
-                  <label for="name">Name:</label>
-                </td><td>
-                  <input type="text" id="name" placeholder="your name"/>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="email">Email:</label>
-                </td><td>
-                  <input type="text" id="email" placeholder="your email"/>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="password">Password:</label>
-                </td><td>
-                  <input type="password" id="password" name="password" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="ph">Phone Number:</label>
-                </td><td>
-                  <input type="password" id="re-password" name="re-password" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="gender">Gender:</label>
-                </td><td>
-                    <span>
-                      <label for="m">Male:</label><input type="radio" id="m" />
-                    </span>
-                    <span>
-                      <label for="f">Female:</label
-                      ><input type="radio" id="f" />
-                    </span>
-                    <span>
-                      <label for="ot">Other:</label
-                      ><input type="radio" id="ot" />
-                    </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="lang">Language:</label>
-                </td><td>
-                  <select>
-                    <option disabled selected>Select a language:</option>
-                    <option>Telugu</option>
-                    <option>Hindi</option>
-                    <option>English</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="zip">Zipcode:</label>
-                </td><td>
-                  <input type="text" id="zip" name="zip" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="abt">About:</label>
-                </td><td>
-                  <textarea id="abt" placeholder="Write about yourself..."></textarea>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <input type="submit" value="Register" class="a" />
-                </td>
-              </tr>
-            </form>
-          </table>
-        </div>
-      </div>
-    </div>
-  </body>
+</head>
+<body>
+    <div class="out">
+    <form action="submitpage.html">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="your name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="your email"><br><br>
+        <label for="password">Password:</label>
+        <input type="password"><br><br>
+        <label for="Phone number">Phone number:</label>
+        <input type="tel"><br><br>
+        <label for="gender">Gender:</label>
+        <label for="m" style="margin-right: 10px !important; margin-left: 0px !important; width: 30px !important;" >Male:</label>        
+        <input type="radio" name="gender">
+        <label for="f" style="margin-right: 10px !important; margin-left: 10px !important; width: 45px !important;">Female:</label>        
+        <input type="radio" name="gender">
+        <label for="o" style="margin-right: 10px !important;  margin-left: 10px !important; width: 40px !important;">Others:</label>
+        <input type="radio" name="gender"><br><br>
+        <label for="language">Language:</label>
+        <select name="lan" id="lan">
+            <option value="Select language">Select language</option>
+            <option value="telugu">telugu</option>
+            <option value="hindi">hindi</option>
+            <option value="tamil">tamil</option>
+            <option value="English">English</option>
+        </select><br><br>
+        <label for="Zip code">Zip Code:</label>
+        <input type="number"><br><br>
+        <label for="About" >About:</label>
+        <textarea name="about" id="about" cols="40" rows="3" placeholder="Write about yourself..."></textarea><br><br>
+        <input type="submit" value="Register" style="font-weight: bolder; font-size: large;">
+        
+    </form>
+</div>
+</body>
 </html>
